@@ -1,78 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Technobabble Generator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-	<style>
-		body{
-			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-		}
-
-		#output{
-			font-size: 200%;
-		}
-
-		#myButton{
-			width: 200px;
-			height: 50pt;
-			font-size: 15pt;
-		}
-
-		@media only screen and (max-width: 600px){
-
-			body{
-				text-align: center;
-			}
-		}
-	
-	</style>
-</head>
-<body>
-
-
-<p id="output">Loading...</p>
-<button id="myButton">More Technobabble!</button>
-	
-
-</body>
-<script>
-	"use strict";
+"use strict";
 	const words1 = ["Acute", "Aft", "Anti-matter", "Bipolar", "Cargo", "Command", "Communication", "Computer", "Deuterium", "Dorsal", "Emergency", "Engineering", "Environmental", "Flight", "Fore", "Guidance", "Heat", "Impulse", "Increased", "Inertial", "Infinite", "Ionizing", "Isolinear", "Lateral", "Linear", "Matter", "Medical", "Navigational", "Optical", "Optimal", "Optional", "Personal", "Personnel", "Phased", "Reduced", "Science", "Ship's", "Shuttlecraft", "Structural", "Subspace", "Transporter", "Ventral"];
 	
 	const words2 = ["Propulsion", "Dissipation", "Sensor", "Improbability", "Buffer", "Graviton", "Replicator", "Matter", "Anti-matter", "Organic", "Power", "Silicon", "Holographic", "Transient", "Integrity", "Plasma", "Fusion", "Control", "Access", "Auto", "Destruct", "Isolinear", "Transwarp", "Energy", "Medical", "Environmental", "Coil", "Impulse", "Warp", "Phaser", "Operating", "Photon", "Deflector", "Integrity", "Control", "Bridge", "Dampening", "Display", "Beam", "Quantum", "Baseline", "Input"];
 	
 	const words3 = ["Chamber", "Interface", "Coil", "Polymer", "Biosphere", "Platform", "Thruster", "Deflector", "Replicator", "Tricorder", "Operation", "Array", "Matrix", "Grid", "Sensor", "Mode", "Panel", "Storage", "Conduit", "Pod", "Hatch", "Regulator", "Display", "Inverter", "Spectrum", "Generator", "Cloud", "Field", "Terminal", "Module", "Procedure", "System", "Diagnostic", "Device", "Beam", "Probe", "Bank", "Tie-In", "Facility", "Bay", "Indicator", "Cell"];
-
-	// function babbleWords(){
-
-	// 	let words1Length = words1.length;
-	// 	let word1 = words1[(Math.floor(Math.random() * words1Length))]
-	// 	console.log(word1);
-
-
-	// 	let words2Length = words2.length;
-	// 	let word2 = words2[(Math.floor(Math.random() * words2Length))]
-	// 	console.log(word2);
-	
-
-	// 	let words3Length = words3.length;
-	// 	let word3 = words3[(Math.floor(Math.random() * words3Length))]
-	// 	console.log(word3);
-
-		
-	// 	return `${word1}` + `${word2}` + `${word3}`;
-
-	// }
-
-
-	// document.querySelector("#myButton").onClick = function() {babbleWords()};
-  	// 	document.querySelector('#output').innerHTML =	babbleWords();
-
-
-
-
-	//console.log(words1[0]);
 
 	innit();
 
@@ -81,6 +12,7 @@
 	//document.querySelector("#myButton").onclick = generate;
 	document.querySelector("#myButton").addEventListener("click", generate);
 	}
+    
 	function randomElement(array){
 		return array[(Math.floor(Math.random() * array.length))]
 	}
@@ -90,6 +22,3 @@
 		const str = `${randomElement(words1)} ${randomElement(words2)} ${randomElement(words3)}?`;
 		document.querySelector("#output").innerHTML = str;
 	}
-
-</script>
-</html>
