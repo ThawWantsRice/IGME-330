@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Martian+Mono:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "IBM Plex Mono", serif;
+        }
+
+        #first_name_text_box{
+            width: 25%;
+            height: 50px;
+            font-size: 16pt;
+        }
+
+        #last_name_text_box{
+            width: 25%;
+            height: 50px;
+            font-size: 16pt;
+        }
+
+        button{
+            height: 50px;
+            width: 150px;
+            font-size: 14pt;
+        }
+
+        p{
+            background-color: yellow;
+            color: red;
+            font-size: 20pt;
+        }
+
+        @media only screen and (min-width: 1024px){
+            body{
+                background-color: red;
+                padding: 100px;
+            }
+        }
+    </style>
+
+    <script>
+        //Window loading because we need it in the head
+        window.onload = (e) =>{
+            //Lotta Variables
+            const helloButton = document.querySelector('#btn-hello');
+            const byeButton = document.querySelector('#btn-goodbye');
+            const firstNameBox = document.querySelector('#first_name_text_box');
+            const lastNameBox = document.querySelector('#last_name_text_box');
+            const outputP = document.querySelector('#output_p');
+            const checkbox = document.querySelector(`#shoutify`);
+
+            //Checks for empty inputs for defaults and checkbox to uppercase
+            const greet = (greeting) =>{
+                if (checkbox.checked === true){
+                    outputP.style.textTransform = `uppercase`;
+                }
+                else{
+                    outputP.style.textTransform = `none`;
+                }
+
+                let firstName = firstNameBox.value.trim();
+                if(firstNameBox.value === ``){
+                    firstName = `Peter`;
+                }
+                let lastName = lastNameBox.value.trim();
+                if(lastNameBox.value === ``){
+                    lastName = `Parker`;
+                }
+                outputP.innerHTML = `${greeting}, ${firstName} ${lastName}`;
+            }
+            //Hello
+            helloButton.addEventListener('click' , (e) => {
+            console.log('clicked!');
+            greet(`Hello`);
+        })
+            //Bye Bye
+            byeButton.addEventListener('click' , (e) => {
+            console.log('clicked!');
+            greet(`Goodbye`);
+        })
+    }
+    </script>
+</head>
+<body>
+    <button id = "btn-hello">Say Hello</button>
+    <button id = "btn-goodbye">Say Goodbye </button>
+
+    <input type="checkbox" id="shoutify" name="shoutify" /><label for="shoutify">Shoutify!</label>
+
+    <hr>
+
+    <input id="first_name_text_box" placeholder="Your first name">
+    <br>
+    <input id="last_name_text_box" placeholder="Your last name">
+
+    <p id="output_p">Words!</p>
+
+</body>
+</html>
+
