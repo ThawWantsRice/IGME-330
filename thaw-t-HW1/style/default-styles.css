@@ -4,12 +4,17 @@ body{
 
 #output{
     font-size: 200%;
+    color: black;
 }
 
-#myButton{
+#btn-gen-1{
     width: 200px;
     height: 50pt;
     font-size: 15pt;
+}
+
+#btn-gen-5{
+    display: none;
 }
 
 @media only screen and (min-width: 240px){
@@ -73,7 +78,7 @@ body{
         background-color: #23D160;
     }
 
-    #myButton{
+    #btn-gen-1{
         width: 300px;
         height: 75pt;
         font-size: 1.5rem;
@@ -102,6 +107,34 @@ body{
 
     #output{
         text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1408px){
+    body{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    h1{
+        background-color: #e42bd4;
+    }
+
+    .container{
+        display: block;
+        margin: 1rem;
+    }
+
+    #output{
+        text-align: left;
+        color: black;
+    }
+
+    #btn-gen-5{
+        width: 300px;
+        height: 75pt;
+        font-size: 1.5rem;
+        display: inline;
     }
 }
 
