@@ -1,0 +1,222 @@
+{
+    "title": "Audio Visualizer",
+    "instructions":"Select a track from the drop-down and experience the track in the way you want by clicking on checkboxes or sliding the sliders to curate your viewing.",
+      "audioFiles": [
+      {
+        "name": "Key",
+        "file": "media/minecraft-soundtrack/01-Key.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Door",
+        "file": "media/minecraft-soundtrack/02-Door.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Subwoofer Lullaby",
+        "file": "media/minecraft-soundtrack/03-Subwoofer-Lullaby.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Death",
+        "file": "media/minecraft-soundtrack/04-Death.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Living Mice",
+        "file": "media/minecraft-soundtrack/05-Living-Mice.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Moog-City",
+        "file": "media/minecraft-soundtrack/06-Moog-City.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Haggstrom",
+        "file": "media/minecraft-soundtrack/07-Haggstrom.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Minecraft",
+        "file": "media/minecraft-soundtrack/08-Minecraft.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Oxygène",
+        "file": "media/minecraft-soundtrack/09-Oxygène.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Équinoxe",
+        "file": "media/minecraft-soundtrack/10-Équinoxe.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Mice on Venus",
+        "file": "media/minecraft-soundtrack/11-Mice-on-Venus.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Dry Hands",
+        "file": "media/minecraft-soundtrack/12-Dry-Hands.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Wet Hands",
+        "file": "media/minecraft-soundtrack/13-Wet-Hands.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Clark",
+        "file": "media/minecraft-soundtrack/14-Clark.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Chris",
+        "file": "media/minecraft-soundtrack/15-Chris.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Thirteen",
+        "file": "media/minecraft-soundtrack/16-Thirteen.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Excuse",
+        "file": "media/minecraft-soundtrack/17-Excuse.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Sweden",
+        "file": "media/minecraft-soundtrack/18-Sweden.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Cat",
+        "file": "media/minecraft-soundtrack/19-Cat.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Dog",
+        "file": "media/minecraft-soundtrack/20-Dog.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Danny",
+        "file": "media/minecraft-soundtrack/21-Danny.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Beginning",
+        "file": "media/minecraft-soundtrack/22-Beginning.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Droopy Likes Ricochet",
+        "file": "media/minecraft-soundtrack/23-Droopy-Likes-Ricochet.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      },
+      {
+        "name": "Droopy Likes Your Face",
+        "file": "media/minecraft-soundtrack/24-Droopy-Likes-Your-Face.mp3",
+        "meta": {
+          "artist": "C418",
+          "album": "Minecraft Soundtrack Volume Alpha",
+          "year": 2011
+        }
+      }
+    ]
+  }
