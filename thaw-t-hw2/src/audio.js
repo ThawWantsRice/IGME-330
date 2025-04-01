@@ -1,6 +1,6 @@
 let audioCtx;
 
-let element, sourceNode, analyserNode, gainNode, highshelfFilter, lowshelfFilter, distortionNode;
+let element, sourceNode, analyserNode, gainNode, treble, bass, distortionNode;
 
 
 const DEFAULTS = Object.freeze({
@@ -28,21 +28,19 @@ analyserNode.fftSize = DEFAULTS.numSamples;
 gainNode = audioCtx.createGain();
 gainNode.gain.value = DEFAULTS.gain;
 
-sourceNode.connect(analyserNode);
-analyserNode.connect(gainNode);
-gainNode.connect(audioCtx.destination);
-
 // Treble
-highshelfFilter = audioCtx.createBiquadFilter();
-highshelfFilter.type = "highshelf";
+treble = audioCtx.createBiquadFilter();
+treble.type = "highshelf";
 
 // Bass
-lowshelfFilter = audioCtx.createBiquadFilter();
-lowshelfFilter.type = "lowshelf";
+bass = audioCtx.createBiquadFilter();
+bass.type = "lowshelf";
 
-analyserNode.connect(highshelfFilter);
-highshelfFilter.connect(lowshelfFilter);
-lowshelfFilter.connect(audioCtx.destination);
+sourceNode.connect(analyserNode);
+analyserNode.connect(bass);
+bass.connect(treble)
+treble.connect(gainNode);
+gainNode.connect(audioCtx.destination);
 
 }
 // make sure that it's a Number rather than a String
@@ -66,12 +64,12 @@ const setVolume = (value) =>{
 
 const setBassGain = (value) => {
     value = Number(value);
-    lowshelfFilter.gain.setValueAtTime(value, audioCtx.currentTime);
+    bass.gain.setValueAtTime(value, audioCtx.currentTime);
 }
 
 const setTrebleGain = (value) => {
     value = Number(value);
-    highshelfFilter.gain.setValueAtTime(value, audioCtx.currentTime);
+    treble.gain.setValueAtTime(value, audioCtx.currentTime);
 }
 
 export {audioCtx, 
