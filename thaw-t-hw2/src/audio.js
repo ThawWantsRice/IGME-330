@@ -35,14 +35,10 @@ gainNode.connect(audioCtx.destination);
 // Treble
 highshelfFilter = audioCtx.createBiquadFilter();
 highshelfFilter.type = "highshelf";
-highshelfFilter.frequency.value = 1000; 
-highshelfFilter.gain.value = 0; 
 
 // Bass
 lowshelfFilter = audioCtx.createBiquadFilter();
 lowshelfFilter.type = "lowshelf";
-lowshelfFilter.frequency.value = 200;  
-lowshelfFilter.gain.value = 0; 
 
 analyserNode.connect(highshelfFilter);
 highshelfFilter.connect(lowshelfFilter);

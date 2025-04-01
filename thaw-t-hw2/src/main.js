@@ -36,11 +36,6 @@ const jsonLoad = async () => {
 }
 
 const displayJsonData = () => {
-    if (!avData || !avData.audioFiles) {
-        console.error("Audio data not available.");
-        return;
-    }
-
     const trackSelect = document.querySelector("#trackSelect");
     trackSelect.innerHTML = ""; 
 
@@ -60,13 +55,13 @@ const updateTrackInfo = () => {
     const trackSelect = document.querySelector("#trackSelect");
     const selectedTrack = avData.audioFiles.find(track => track.file === trackSelect.value);
 
-    const trackInfoDiv = document.querySelector("#trackInfo");
+    const trackInfo = document.querySelector("#trackInfo");
     if (selectedTrack) {
-        trackInfoDiv.innerHTML = `
-            <p><strong>Track:</strong> ${selectedTrack.name}</p>
-            <p><strong>Artist:</strong> ${selectedTrack.meta.artist}</p>
-            <p><strong>Album:</strong> ${selectedTrack.meta.album}</p>
-            <p><strong>Year:</strong> ${selectedTrack.meta.year}</p>
+        trackInfo.innerHTML = `
+            <p><strong>Track:</strong> ${selectedTrack.name}
+            <strong>Artist:</strong> ${selectedTrack.meta.artist}</p>
+            <p><strong>Album:</strong> ${selectedTrack.meta.album}
+            <strong>Year:</strong> ${selectedTrack.meta.year}</p>
         `;
     }
 };

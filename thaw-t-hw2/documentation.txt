@@ -1,9 +1,9 @@
 The 2 audio effects added in were treble and bass.
 
 The sprite class is named sprite and is in Canvas.js. It makes white glowing circles that fall down from the top of the screen to the bottom and repeats. 
-The circles expand and speed up in relation to the audio.
+The circles expand and speed up in relation to the audio. Also where the sprite is x wise makes the sprite also respond different to the audio. 
 
 In the JSON I put in the title of the app, instructions and the audio tracks of which there are 24 of them with their data. 
 
 To change the aesthetic around I change the gradient to a brown gradient with green bars and waveform. I changed the circle in the middle to a red circle glowing white. 
-Tried to keep the minecraft theme. I give myself a 5%. Definitely could have changed the page more to get even more minecraft but this hw is already 2 days late. 
+Tried to keep the minecraft theme. I give myself a 5%. Definitely could have changed the page more to get even more minecraft.

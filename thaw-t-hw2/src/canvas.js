@@ -28,6 +28,7 @@ const setupCanvas =(canvasElement,analyserNodeRef) =>{
 const draw = (params={}) =>{
   // 1 - populate the audioData array with the frequency data from the analyserNode
 	// notice these arrays are passed "by reference" 
+    //got these from web md.
     analyserNode.fftSize = 2048;
     const bufferLength = analyserNode.fftSize;
     const dataArray = new Uint8Array(bufferLength);
@@ -183,6 +184,7 @@ class Sprite {
     }
 
     update(audioData) {
+        //Where the sprite is. The sprite responds different. 
         let index = Math.floor((this.x / canvasWidth) * audioData.length);
         let percent = audioData[index] / 255; 
     
